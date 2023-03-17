@@ -1,0 +1,62 @@
+.calculatrice{
+    display: grid;
+    grid-template-areas:"ecran"
+                        "suppression"
+                        "chiffres"
+                        "operateurs";
+    grid-template-columns: repeat(4, 1fr);
+    place-content: CENTER;
+    min-height: 100vh;
+    margin-left: 40%;
+    
+}
+
+.ecran{
+    grid-area: ecran;
+    background-color: rgb(28, 28, 28);
+    font-size: 36px;
+    text-align: right;
+    height: 100px;
+    width: 400px;
+    color: azure;
+    border-radius: 10px;
+    
+    
+}
+.chiffres{
+    display: grid;
+    grid-area: chiffres;
+    grid-template-columns: repeat(3, 100px);
+}
+
+.operateurs{
+    display: grid;
+    grid-area: operateurs;
+    grid-row: 3;
+    margin-left: 300px;
+    width: 100px;
+}
+
+
+.suppression{
+    display: grid;
+    grid-area: suppression;
+    grid-template-columns: repeat(2,200px);
+}
+
+button:hover{
+    background-color: rgb(51, 51, 51);
+    color: azure;
+}
+button{
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 30px;
+    border: none;
+    margin: 5px;
+    transition: 0.4s;
+}
+
+p{
+    padding-right: 20px;
+}
